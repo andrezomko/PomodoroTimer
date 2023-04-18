@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+header svg{
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}
+
+:root{
+    --bg-color: #EAE7E2;
+    --noClickCard-color:#D7E2E8;
+    --clickCard-color:#B9CBD9;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+main{
+    max-width: 90rem;
+    display: flex;
+    margin: 19rem auto ;
+   
+}
+
+
+.timer{
+    width: fit-content;
+    
+}
+
+.display{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.6rem;
+    line-height: 14.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #323238;
+    max-width: 39rem;
+    height: 11.7rem;
+    margin-bottom: 4.8rem;
+    margin-top: 5.8rem;
+   
+}
+
+.controls{
+    width: 39rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 5.3rem;
+    margin-left: 1rem;   
+}
+button{
+    background-color:transparent;
+}
+
+.cards{
+    display: grid;
+    gap: 3.2rem;
+    grid-template-areas: "A B" "C D";
+    margin-left: 19.2rem;
+}
+
+.tree{
+    grid-area: A;
+    position: relative;
+    height: 122px;   
+}
+
+.rain{
+    grid-area: B;
+    background-color: none; 
+    position: relative; 
+}
+
+.coffee{
+    grid-area: C;
+    position: relative;
+}
+
+.fire{
+    grid-area: D;
+    position: relative;
+}
+
+.hide{
+    display: none;
+    position: relative;
+}
+
+ .range, .range2{
+    
+        -webkit-appearance: none;
+        width: 90px;
+        height: 4px;
+        border-radius: 5px;
+        background-color: white;
+        position: absolute;
+        top: 118px;
+        left: 24.5px;
+ }
+
+.forestVlm::-webkit-slider-thumb, .rainVlm::-webkit-slider-thumb, .cofeeVlm::-webkit-slider-thumb, .fireVlm::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+}
+
